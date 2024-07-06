@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
     readOnly: true,
     precision: 0.5,
   };
-  
+ 
   return (
     <Link className="productCard" to={`/product/${product?._id}`}>
       {product?.images?.[0]?.url ? (

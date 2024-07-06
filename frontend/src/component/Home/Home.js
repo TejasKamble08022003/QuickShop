@@ -1,7 +1,7 @@
 import React, {Fragment,useEffect} from "react";
 import { CgMouse } from "react-icons/cg"
 import "./Home.css";
-import Product from "./ProductCard.js";
+import ProductCard from "./ProductCard.js";
 import MetaData from "../layout/MetaData.js";
 import {  
   getProduct,
@@ -52,7 +52,7 @@ const Home = () => {
   <div className="container" id="container">
   
 
-  {products && products.map((product) => <Product product={product} />)}
+  {products && products.map((product) => <ProductCard key={product._id} product={product} />)}
             
     </div></Fragment>
   )}
